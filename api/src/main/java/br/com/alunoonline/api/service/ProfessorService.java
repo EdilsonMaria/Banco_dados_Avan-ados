@@ -1,6 +1,5 @@
 package br.com.alunoonline.api.service;
 
-import br.com.alunoonline.api.model.Aluno;
 import br.com.alunoonline.api.model.Professor;
 import br.com.alunoonline.api.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -9,4 +9,5 @@ public class HistoricoAlunoResponse {
     private String studentName;
     private String studentEmail;
     private List<DisciplinasAlunoResponse> studentSubjectResponseList;
+
 }
