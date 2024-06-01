@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    
+    justify-content: space-between;
+    align-items:center
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;;
+    
+}
+
+/* Estilos para a página de gerenciamento de professores */
+
+main {
+
+    
+}
+
+.opcoes {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.opcoes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opcoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.opcoes li {
+    margin-bottom: 15px;
+}
+
+.opcoes a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.opcoes a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #d2d4d6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+

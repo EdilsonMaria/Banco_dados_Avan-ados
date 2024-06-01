@@ -17,7 +17,7 @@ public class StudentController {
     @Autowired
     StudentService studentService; //fazendo a injeção de dependencia do service em controller
 
-    @PostMapping
+    @PostMapping //O metodo Post é de inserir, verbos http
     @ResponseStatus(HttpStatus.CREATED)
     public void create(@RequestBody CriarAlunoRequest criarAlunoRequest) { //convertento o jason que vem do Postman ou insonmia para um arquivo java Aluno
         studentService.create(criarAlunoRequest);
@@ -29,7 +29,7 @@ public class StudentController {
         return studentService.findAll();
     }
 
-    @GetMapping("/{id}") //o id fica entre chaves pois é um parametros
+    @GetMapping("/{id}") // O metodo Get é de busca, verbos http
     @ResponseStatus(HttpStatus.OK)
     public Optional<Student> findById(@PathVariable Long id) { //como no front end nesse caso insonmia vai ter que busca um parametro // algum numero de id que retorna as informações, precisa coloco pathVariable
         return studentService.findById(id);

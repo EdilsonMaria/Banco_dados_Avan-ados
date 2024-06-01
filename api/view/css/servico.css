@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    
+    justify-content: space-between;
+    align-items:center
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.servicos {
+    padding: 40px;
+}
+
+.servicos h2 {
+    text-align:center;
+    margin-bottom: 20px;
+    
+
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #d2d4d6;
+    text-align: center;
+}
+
+.btn {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+.secao-servico {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+footer {
+    background-color: #d2d4d6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
