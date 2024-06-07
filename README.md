@@ -1,3 +1,11 @@
+# Projeto em Contribuição com
+
+Nome - Nayara dos Santos Nascimento
+Email - santosnay99@gmail.com
+
+Link GitHub: https://github.com/nayarasn
+
+
 # WEB DEVELOPMENT
 
 O projeto a seguir é uma aplicação web seguindo os padrões de API REST, se trata de uma aplicação de Aluno Online, um sistema universitária, com fuções:
@@ -76,6 +84,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 # Uso
 
+
 # Estrutura do Projeto
 
 WebDevelopment/
@@ -103,7 +112,7 @@ Commit suas alterações (git commit -m 'Add some AmazingFeature')
 Envie para a branch (git push origin feature/AmazingFeature)
 Abra um Pull Request
 
-## Licença
+# Licença
 
 Este projeto está licenciado sob a [] - veja o arquivo LICENSE para detalhes.
 
