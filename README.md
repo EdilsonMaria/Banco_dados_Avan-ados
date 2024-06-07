@@ -17,7 +17,7 @@ O projeto a seguir é uma aplicação web seguindo os padrões de API REST, se t
         Gerencia suas Disciplinas;
 O proposito dessa aplicação é seguir todos os parametros de CRUD(POST, GET, PUT e DELETE),para as funções propostas acima.
 
-## Índice
+# Índice
 
 - [Visão Geral](#visão-geral)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -30,11 +30,11 @@ O proposito dessa aplicação é seguir todos os parametros de CRUD(POST, GET, P
 - [Licença](#licença)
 - [Contato](#contato)
 
-## Visão Geral
+# Visão Geral
 
 A aplicação da a oportunidade de entender melhor como funciona a chamada de uma API pelo frontEnd atravez do javaScript consumindo os endpoints passados pelo backEnd.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 - **Backend:**
   - Java Spring Boot
@@ -44,23 +44,23 @@ A aplicação da a oportunidade de entender melhor como funciona a chamada de um
   - CSS
   - JavaScript
 
-## Requisitos
+# Requisitos
 
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) 17
 - [Maven](https://maven.apache.org/download.cgi)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [VS code](https://https://code.visualstudio.com/download) 
 
-## Instalação
+# Instalação
 
-### Clonando o Repositório
+# Clonando o Repositório
 
-```bash
+bash
 git clone https://github.com/EdilsonMaria/Banco_dados_Avancados.git
 cd api
 
 
-#### Configuração 
+# Configuração 
 
 - Configure o PostgreSQL e crie um banco de dados
 - Atualize o arquivo application.properties em src/main/resources com suas credenciais do banco de dados.
@@ -74,9 +74,9 @@ spring.jpa.hibernate.ddl-auto=update
 
 ./mvnw spring-boot:run
 
-##### Uso
+# Uso
 
-##### Estrutura do Projeto
+# Estrutura do Projeto
 
 WebDevelopment/
 ├── backend/
@@ -93,7 +93,7 @@ WebDevelopment/
 │   └── javaScript
 └── README.md  
 
-#### Contribuição
+# Contribuição
 
 Se você deseja contribuir, por favor siga as instruções abaixo:
 
@@ -103,11 +103,11 @@ Commit suas alterações (git commit -m 'Add some AmazingFeature')
 Envie para a branch (git push origin feature/AmazingFeature)
 Abra um Pull Request
 
-#### Licença
+## Licença
 
 Este projeto está licenciado sob a [] - veja o arquivo LICENSE para detalhes.
 
-#### Contato
+# Contato
 Nome - Edilson Maria da Silva Junior
 Email - edilson.eng1@gmail.com
 
