@@ -1,9 +1,10 @@
-# Projeto em Contribuição com
+# Projeto em Contribuição com:
 
 Nome - Nayara dos Santos Nascimento
 Email - santosnay99@gmail.com
 
 Link GitHub: https://github.com/nayarasn
+Link Linkedid https://www.linkedin.com/in/nayarasnascimento/
 
 
 # WEB DEVELOPMENT
