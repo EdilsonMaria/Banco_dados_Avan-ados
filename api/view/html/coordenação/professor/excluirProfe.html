@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Professor</title>
     <link rel="stylesheet" href="../../../css/cadAlunoProfCood.css">
+    <script src="../../../javaScript/coordenação/professor/excluirProfe.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,23 +19,13 @@
 
     <main>
         <section class="formulario">
-            <h2>Excluir pelo Nome:</h2>
-            <form action="#">
+            <h2>Excluir pelo ID:</h2>
+            <form id="deleteForm">
                 <div class="campo">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <button type="submit">Excluir</button>
-            </form>
-        </section>
-        <section class="formulario">
-            <h2>Excluir pela Matricula:</h2>
-            <form action="#">
-                <div class="campo">
-                    <label for="nome">Matricula:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <button type="submit">Excluir</button>
+                <label for="deleteProfessorId">ID do Professor:</label>
+                <input type="text" id="deleteProfessorId" name="deleteProfessorId" required>
+                </div> 
+                <button type="submit">Deletar Professor</button>
             </form>
         </section>
     </main>

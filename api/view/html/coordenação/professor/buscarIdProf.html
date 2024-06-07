@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Professor</title>
     <link rel="stylesheet" href="../../../css/cadAlunoProfCood.css">
+    <script src="../../../javaScript/coordenação/professor/buscarIdProf.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,24 +19,18 @@
 
     <main>
         <section class="formulario">
-            <h2>Buscar pelo Nome:</h2>
+            <h2>Buscar pelo ID:</h2>
+            <input type="text" id="professorId" name="professorId" required>
             <form action="#">
                 <div class="campo">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="radio" id="downloadCSV" name="outputOption" value="csv" checked>
+                    <label for="downloadCSV">Baixar CSV</label>
+                    <input type="radio" id="showOnScreen" name="outputOption" value="screen">
+                    <label for="showOnScreen">Mostrar na Tela</label>
                 </div>
-                <button type="submit">Buscar</button>
+                <button type="submit">Carregar Professor</button>
             </form>
-        </section>
-        <section class="formulario">
-            <h2>Buscar pela Matricula:</h2>
-            <form action="#">
-                <div class="campo">
-                    <label for="nome">Matricula:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <button type="submit">Buscar</button>
-            </form>
+            <div class="resultados"></div>
         </section>
     </main>
 

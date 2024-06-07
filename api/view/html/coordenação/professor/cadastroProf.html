@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Professor</title>
     <link rel="stylesheet" href="../../../css/cadAlunoProfCood.css">
+    <script src="../../../javaScript/coordenação/professor/cadastroProf.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,14 +20,14 @@
     <main>
         <section class="formulario">
             <h2>Dados do Professor:</h2>
-            <form action="http://localhost:8080/professor">
+            <form action="#">
                 <div class="campo">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" class="name" name="name" placeholder="Name">
                 </div>
                 <div class="campo">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" class="email" name="email" placeholder="Emal">
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>

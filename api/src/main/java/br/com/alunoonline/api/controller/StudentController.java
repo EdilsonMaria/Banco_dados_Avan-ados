@@ -19,30 +19,35 @@ public class StudentController {
 
     @PostMapping //O metodo Post é de inserir, verbos http
     @ResponseStatus(HttpStatus.CREATED)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void create(@RequestBody CriarAlunoRequest criarAlunoRequest) { //convertento o jason que vem do Postman ou insonmia para um arquivo java Aluno
         studentService.create(criarAlunoRequest);
     }
 
     @GetMapping("/all") //fazendo o mapeamento para quando fizer a requisição http com o /all vir para esse trecho de codigo
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public List<Student> findAll() {
         return studentService.findAll();
     }
 
     @GetMapping("/{id}") // O metodo Get é de busca, verbos http
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public Optional<Student> findById(@PathVariable Long id) { //como no front end nesse caso insonmia vai ter que busca um parametro // algum numero de id que retorna as informações, precisa coloco pathVariable
         return studentService.findById(id);
     }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void update(@RequestBody Student student, @PathVariable Long id) {
         studentService.update(id, student);  //devolvendo o aluno atualizado para o BD
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void deleteById(@PathVariable Long id) { // o PathVaruable converte o Id de verbo Http para Id de Java
         studentService.deleteById(id); //deletando o aluno do BD
     }

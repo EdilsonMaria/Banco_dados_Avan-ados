@@ -17,12 +17,14 @@ public class RegistrionStudentController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void created(@RequestBody RegistrionStudent registrionStudent)
         { registrionStudentService.create(registrionStudent);
     }
 
     @PatchMapping("/update-grades/{registrionSrudentId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void updateGrades(@RequestBody AtualizarNotasRequest atualizarNotasRequest,
                              @PathVariable Long registrionSrudentId) {
         registrionStudentService.updateGrades(registrionSrudentId, atualizarNotasRequest);
@@ -30,12 +32,14 @@ public class RegistrionStudentController {
 
     @PatchMapping("/update-status-to-break/{registrionStudentId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void updateStatusToBreak(@PathVariable Long registrionStudentId) {
         registrionStudentService.updateStatusToBreak(registrionStudentId);
     }
 
     @GetMapping("/academic-transcript/{student_id}")
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public HistoricoAlunoResponse getAcademicTranscript(@PathVariable Long student_id) {
         return registrionStudentService.getAcademicTranscript(student_id);
     }

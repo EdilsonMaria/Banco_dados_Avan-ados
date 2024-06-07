@@ -15,6 +15,7 @@ public class CourseController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public void create(@RequestBody Course course) {courseService.create(course);}
 
 }
